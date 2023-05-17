@@ -1,0 +1,50 @@
+POST http://localhost:3001/users/register
+content-type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "johndoe@gmail.com",
+    "password": "john123"
+}
+
+###
+PATCH http://localhost:3001/users/me
+content-type: application/json
+
+{
+    "firstName": "John1",
+    "lastName": "Doe1",
+    "email": "johndoe1@gmail.com",
+    "password": "john1231"
+}
+
+###
+DELETE http://localhost:3001/users/90ae0755-3b94-4229-b546-c7ef2905ee68
+
+###
+POST http://localhost:3001/users/login
+content-type: application/json
+
+{
+    "email": "bahriddin@gmail.com",
+    "password": "bahriddin"
+}
+
+###
+POST http://localhost:3001/users/login
+content-type: application/json
+
+{
+    "email": "sammiac@gmail.com",
+    "password": "sammi123"
+}
+
+###
+POST http://localhost:3001/users/login
+content-type: application/json
+
+{
+    "email": "johndoe@gmail.com",
+    "password": "john123"
+}

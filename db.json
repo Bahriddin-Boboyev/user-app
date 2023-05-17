@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "fa507051-e12d-499b-847d-619f25da4843",
+      "firstName": "Bahriddin",
+      "lastName": "Boboyev",
+      "email": "bahriddin@gmail.com",
+      "password": "$2b$10$R6yN2z35T0Wucy0yYV78SuHqxMuJycwxn1cJg7YG01ymeqmOmYB5y",
+      "role": "superAdmin"
+    },
+    {
+      "id": "922557a9-cb07-413c-99fe-13a221663654",
+      "firstName": "Sammi",
+      "lastName": "AC",
+      "email": "sammiac@gmail.com",
+      "password": "$2b$10$0v7N4fDmTY2PYR4vXq4TWu/CLCcFb.qnO3XDf9E6G6MkytCGXPDB6",
+      "role": "admin"
+    },
+    {
+      "id": "8ad396ce-8ae2-4601-b4f4-c070865cc5c6",
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@gmail.com",
+      "password": "$2b$10$fZJ/LKhjoGuKUiIZAYh3UOlYzSHJGyfkd6.wTsPICcjJdSqvxZF3G",
+      "role": "customer"
+    }
+  ]
+}
