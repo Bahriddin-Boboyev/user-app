@@ -2,8 +2,8 @@ POST http://localhost:3001/users/register
 content-type: application/json
 
 {
-    "firstName": "John",
-    "lastName": "Doe",
+    "firstName": "John3",
+    "lastName": "Doe3",
     "email": "johndoe@gmail.com",
     "password": "john123"
 }
@@ -20,7 +20,19 @@ content-type: application/json
 }
 
 ###
-DELETE http://localhost:3001/users/90ae0755-3b94-4229-b546-c7ef2905ee68
+POST http://localhost:3001/users
+content-type: application/json
+
+{
+    "firstName": "John3",
+    "lastName": "Doe3",
+    "email": "johndoe3@gmail.com",
+    "password": "john1233"
+}
+
+
+###
+DELETE http://localhost:3001/users/fa507051-e12d-499b-847d-619f25da4843
 
 ###
 POST http://localhost:3001/users/login

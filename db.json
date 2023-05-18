@@ -21,7 +21,15 @@
       "firstName": "John",
       "lastName": "Doe",
       "email": "johndoe@gmail.com",
-      "password": "$2b$10$fZJ/LKhjoGuKUiIZAYh3UOlYzSHJGyfkd6.wTsPICcjJdSqvxZF3G",
+      "password": "$2b$10$MnTfZjY7XrkJ2OGA8q/kUu0wTY2GoVbfUsRHAv7ySWJl5qVBgxw7W",
+      "role": "customer"
+    },
+    {
+      "id": "ec65f855-f86d-4530-8646-a6b85d33dd98",
+      "firstName": "John3",
+      "lastName": "Doe3",
+      "email": "johndoe3@gmail.com",
+      "password": "$2b$10$8LGjgNQ2bZt66uxkDqvQR.4EiuvYW2rkSrfh0v2Dr0D15S1VIq5FW",
       "role": "customer"
     }
   ]
