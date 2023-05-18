@@ -2,8 +2,8 @@ POST http://localhost:3001/users/register
 content-type: application/json
 
 {
-    "firstName": "John3",
-    "lastName": "Doe3",
+    "firstName": "John",
+    "lastName": "Doe",
     "email": "johndoe@gmail.com",
     "password": "john123"
 }
@@ -13,10 +13,10 @@ PATCH http://localhost:3001/users/me
 content-type: application/json
 
 {
-    "firstName": "John1",
-    "lastName": "Doe1",
-    "email": "johndoe1@gmail.com",
-    "password": "john1231"
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "johndoe@gmail.com",
+    "password": "john"
 }
 
 ###

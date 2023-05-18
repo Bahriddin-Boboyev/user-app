@@ -7,16 +7,16 @@ import { randomUUID } from "node:crypto";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
+import Joi from "joi";
 
-/* import Joi from "joi";
-
+// validate
 const usersSchema = Joi.object({
   firstName: Joi.string().required().min(1),
   lastName: Joi.string().required().min(1),
   email: Joi.string().required().email(),
   password: Joi.string().required().min(6),
 });
-*/
+
 const app = express();
 app.use(express.json());
 dotenv.config();
@@ -28,6 +28,10 @@ const defaultData = { users: [] };
 const db = new Low(adapter, defaultData);
 
 app.post("/users/register", async (req, res) => {
+  const { error } = usersSchema.validate(req.body);
+  if (error) {
+    return res.status(400).send(error.details[0].message);
+  }
   try {
     const { firstName, lastName, email, password } = req.body;
     await db.read();
@@ -117,6 +121,10 @@ app.get("/users/me", async (req, res) => {
 });
 
 app.patch("/users/me", async (req, res) => {
+  const { error } = usersSchema.validate(req.body);
+  if (error) {
+    return res.status(400).send(error.details[0].message);
+  }
   try {
     if (process.env.userID) {
       await db.read();
@@ -145,6 +153,11 @@ app.patch("/users/me", async (req, res) => {
 });
 
 app.post("/users", async (req, res) => {
+  const { error } = usersSchema.validate(req.body);
+
+  if (error) {
+    return res.status(400).send(error.details[0].message);
+  }
   try {
     if (process.env.userID) {
       await db.read();
@@ -219,5 +232,5 @@ app.delete("/users/:id", async (req, res) => {
 });
 
 app.listen(3001, () => {
-  console.log("Server ishlamoqda...");
+  console.log("Server is running...");
 });
